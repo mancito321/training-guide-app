@@ -41,6 +41,8 @@ const selectedExerciseReducer = (exercise = null, action) =>{
   console.log(action)
   if(action.type === 'EXERCISE_SELECTED') {
     return exerciseMetaData()[action.payload] || '404'
+  } else if(action.type === 'FAKE_ACTION') {
+    console.log(action.payload)
   }
 
   return exercise

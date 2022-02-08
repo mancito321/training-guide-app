@@ -1,13 +1,13 @@
 export const exerciseMetaData = () => {
 
   return {
-    'pushpress': 'https://i.ytimg.com/vi/iaBVSJm78ko/maxresdefault.jpg',
-    'wchinups': 'https://i.ytimg.com/vi/OmQU5p5BgcQ/mqdefault.jpg',
-    'idpress': 'https://www.burnthefatinnercircle.com/members/images/1749b.jpg',
-    'borow': 'https://cdn.mos.cms.futurecdn.net/spmeMadc8qAz59nKTFJmZj.jpg',
-    'dip': 'https://qph.fs.quoracdn.net/main-qimg-2f9289811e4f582cb272f6206d48d7a0',
-    'fpull': 'https://www.soypowerlifter.com/wp-content/uploads/2019/06/face-pull.png',
-    'crfly': 'https://i.pinimg.com/originals/b8/3e/84/b83e847e562b005627e35faea0c172da.png',
+    'pushpress': '/training-guide-app/images/pushpress.png',
+    'wchinups': '/training-guide-app/images/weighted-pull-ups.jpeg',
+    'idpress': '/training-guide-app/images/incline-dpress.png',
+    'borow': '/training-guide-app/images/bent-orows.png',
+    'dip': '/training-guide-app/images/dips.png',
+    'fpull': '/training-guide-app/images/face-pull.png',
+    'crfly': '/training-guide-app/images/reverse-fly.png',
   }
 }
 

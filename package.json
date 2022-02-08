@@ -1,8 +1,8 @@
 {
-  "name": "redux-integration",
+  "name": "training-guide-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mancito321.github.io",
+  "homepage": "https://mancito321.github.io/training-guide-app",
   "dependencies": {
     "@styled-icons/fluentui-system-regular": "^10.35.0",
     "@testing-library/jest-dom": "^5.16.1",
@@ -13,6 +13,7 @@
     "react-redux": "^7.2.6",
     "react-scripts": "5.0.0",
     "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },
