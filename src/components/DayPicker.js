@@ -6,12 +6,14 @@ import { selectDay } from "../actions";
 
 const StyledContainer = styled.div`
   display: flex;
+  padding: 10px 0;
 `
 const StyledItem = styled.div`
-  margin: 10px;
-  border-right: solid;
+  padding: 10px;
+  opacity: 0.7;
   &:hover{
     cursor:pointer;
+    opacity: 1;
   }
   &.active{
     border-bottom: solid;
@@ -22,7 +24,7 @@ function DayPicker({ dayLists, activeDay, selectDay }){
 
   return (
     <React.Fragment>
-      <Container>
+      <Container className='mt-l'>
         <StyledContainer>
           {
             dayLists.map(day => (

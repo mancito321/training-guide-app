@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const screenSize = {
+const screenSize = {
   breakpoints: {
     mobileS: '320px',
     mobileM: '375px',
@@ -13,7 +13,7 @@ export const screenSize = {
   },
 }
 
-export const device = {
+const device = {
   mobileS: `(min-width: ${screenSize.breakpoints.mobileS})`,
   mobileM: `(min-width: ${screenSize.breakpoints.mobileM})`,
   mobileL: `(min-width: ${screenSize.breakpoints.mobileL})`,
@@ -26,7 +26,6 @@ export const device = {
 
 export const Screen = styled.div`
   margin: auto;
-  font-family: "sans-serif";
 
   @media ${device.laptop} { 
     max-width: 800px;
@@ -34,6 +33,24 @@ export const Screen = styled.div`
 
   @media ${device.desktop} {
     max-width: 1400px;
+  }
+  .mt-s{
+    margin-top: 12px;
+  }
+  .mt-m{
+    margin-top: 16px;
+  }
+  .mt-l{
+    margin-top: 24px;
+  }
+  .mb-s{
+    margin-bottom: 12px;
+  }
+  .mb-m{
+    margin-bottom: 16px;
+  }
+  .mb-l{
+    margin-bottom: 24px;
   }
 `;
 export const Container = styled.div`

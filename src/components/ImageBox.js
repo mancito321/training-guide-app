@@ -3,16 +3,22 @@ import { connect } from "react-redux";
 import styled from 'styled-components'
 import { Container } from "../theme";
 
+const StyledContainer = styled(Container)`
+  border-radius: 2px;
+  overflow: hidden;
+  background: #fff;
+`
+
 function ImageBox({ exerciseImage }){
 
   return (
-    <Container>
+    <StyledContainer className='mt-s'>
       {
         exerciseImage && exerciseImage !== '404' && (
           <img src={exerciseImage} alt="Example of excercise"/>
         )
       }
-    </Container>
+    </StyledContainer>
   )
 }
 

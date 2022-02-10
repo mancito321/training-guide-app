@@ -1,21 +1,29 @@
 import React from "react";
 import { connect } from "react-redux";
 import styled from 'styled-components'
-import {ImageSearch} from '@styled-icons/fluentui-system-regular'
+import {ImageSearch} from '@styled-icons/fluentui-system-regular';
 import { Container } from "../theme";
 import { selectExercise } from "../actions";
-import { screenSize } from "../theme"
 
 const StyledContainer = styled(Container)`
   display: grid;
-  grid-template-columns: 85% 5% 5% 5%;
+  grid-template-columns: 76% 8% 8% 8%;
   grid-auto-flow: column;
-  @media (max-width: ${screenSize.breakpoints.tablet}) { 
+  padding-left: 4px;
+  padding-right: 4px;
+  &.element-top{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    justify-content: center;
+    background-color: #e9e7e5;
+  }
+  @media (max-width: ${props => props.theme.screen.screenSize.breakpoints.tablet}) { 
     grid-template-columns: 70% 10% 10% 10%;
   }
 `
 const RowItem = styled.div`
   min-width: 18px;
+  margin: auto 0;
   &.item-a {
     grid-column: 1 / span 1;
   }
@@ -27,8 +35,8 @@ function ExerciseList(props) {
   const { excercises, selectExercise } = props
   return (
     <React.Fragment>
-      <Container>
-        <StyledContainer>
+      <Container className="mt-l">
+        <StyledContainer className="element-top">
           <RowItem className="item-a">
             Excersise
           </RowItem>

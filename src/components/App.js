@@ -4,7 +4,7 @@ import ExerciseList from './ExcersiseList'
 import ImageBox from './ImageBox'
 import DayPicker from './DayPicker'
 import MainTheme,{ Screen } from '../theme'
-
+import '../theme/App.css';
 
 function App() {
   return (
