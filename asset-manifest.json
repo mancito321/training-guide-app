@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/training-guide-app/static/js/main.f4c67047.js",
+    "main.css": "/training-guide-app/static/css/main.dcb1e364.css",
+    "main.js": "/training-guide-app/static/js/main.9d487c92.js",
     "index.html": "/training-guide-app/index.html",
-    "main.f4c67047.js.map": "/training-guide-app/static/js/main.f4c67047.js.map"
+    "main.dcb1e364.css.map": "/training-guide-app/static/css/main.dcb1e364.css.map",
+    "main.9d487c92.js.map": "/training-guide-app/static/js/main.9d487c92.js.map"
   },
   "entrypoints": [
-    "static/js/main.f4c67047.js"
+    "static/css/main.dcb1e364.css",
+    "static/js/main.9d487c92.js"
   ]
 }
