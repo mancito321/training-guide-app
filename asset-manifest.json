@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/training-guide-app/static/js/main.21cb07f6.js",
+    "main.js": "/training-guide-app/static/js/main.f4c67047.js",
     "index.html": "/training-guide-app/index.html",
-    "main.21cb07f6.js.map": "/training-guide-app/static/js/main.21cb07f6.js.map"
+    "main.f4c67047.js.map": "/training-guide-app/static/js/main.f4c67047.js.map"
   },
   "entrypoints": [
-    "static/js/main.21cb07f6.js"
+    "static/js/main.f4c67047.js"
   ]
 }
