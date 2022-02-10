@@ -6,6 +6,14 @@ export const selectDay = day => {
   };
 };
 
+export const selectRoutine= routine => {
+  //return routine selected
+  return {
+    type: 'ROUTINE_SELECTED',
+    payload: routine
+  };
+};
+
 export const selectExercise = exercise => {
   //return day selected
   //this action cannnot have mutation

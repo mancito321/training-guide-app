@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-const screenSize = {
+export const screenSize = {
   breakpoints: {
     mobileS: '320px',
     mobileM: '375px',
@@ -13,7 +13,7 @@ const screenSize = {
   },
 }
 
-const device = {
+export const device = {
   mobileS: `(min-width: ${screenSize.breakpoints.mobileS})`,
   mobileM: `(min-width: ${screenSize.breakpoints.mobileM})`,
   mobileL: `(min-width: ${screenSize.breakpoints.mobileL})`,

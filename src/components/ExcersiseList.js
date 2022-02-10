@@ -4,11 +4,15 @@ import styled from 'styled-components'
 import {ImageSearch} from '@styled-icons/fluentui-system-regular'
 import { Container } from "../theme";
 import { selectExercise } from "../actions";
+import { screenSize } from "../theme"
 
 const StyledContainer = styled(Container)`
   display: grid;
   grid-template-columns: 85% 5% 5% 5%;
   grid-auto-flow: column;
+  @media (max-width: ${screenSize.breakpoints.tablet}) { 
+    grid-template-columns: 70% 10% 10% 10%;
+  }
 `
 const RowItem = styled.div`
   min-width: 18px;

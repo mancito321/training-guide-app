@@ -6,13 +6,13 @@ import { Container } from "../theme";
 function ImageBox({ exerciseImage }){
 
   return (
-    <React.Fragment>
+    <Container>
       {
         exerciseImage && exerciseImage !== '404' && (
           <img src={exerciseImage} alt="Example of excercise"/>
         )
       }
-    </React.Fragment>
+    </Container>
   )
 }
 
