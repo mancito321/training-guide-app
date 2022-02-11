@@ -7,18 +7,27 @@ import { selectExercise } from "../actions";
 
 const StyledContainer = styled(Container)`
   display: grid;
-  grid-template-columns: 76% 8% 8% 8%;
+  grid-template-columns: 80% 10% 10%;
   grid-auto-flow: column;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 10px 5px;
   &.element-top{
     padding-bottom: 15px;
     padding-top: 15px;
     justify-content: center;
     background-color: #e9e7e5;
   }
+  &.element-content{
+    &:hover{
+      cursor:pointer;
+      background-color: #efeeed;
+    }
+  }
+  &.element-active {
+    background-color: #dfdddc1c;
+    color: #0066ccb0;
+  }
   @media (max-width: ${props => props.theme.screen.screenSize.breakpoints.tablet}) { 
-    grid-template-columns: 70% 10% 10% 10%;
+    grid-template-columns: 60% 20% 20%;
   }
 `
 const RowItem = styled.div`
@@ -27,12 +36,9 @@ const RowItem = styled.div`
   &.item-a {
     grid-column: 1 / span 1;
   }
-  .search-icon:hover{
-    cursor:pointer;
-  }
 `
 function ExerciseList(props) {
-  const { excercises, selectExercise } = props
+  const { excercises, activeExercise, selectExercise } = props
   return (
     <React.Fragment>
       <Container className="mt-l">
@@ -46,12 +52,10 @@ function ExerciseList(props) {
           <RowItem>
             Rep
           </RowItem>
-          <RowItem>
-          </RowItem>
         </StyledContainer>
         {excercises.map(excersise => {
           return (
-            <StyledContainer key={excersise.metaName + excersise.reps}>
+            <StyledContainer className={`element-content ${activeExercise === excersise.metaName ? 'element-active' : ''}`} key={excersise.metaName + excersise.reps} onClick={() => selectExercise(excersise.metaName)}>
               <RowItem className="main-item">
                 {excersise.name}
               </RowItem>
@@ -60,9 +64,6 @@ function ExerciseList(props) {
               </RowItem>
               <RowItem>
                 {excersise.reps}
-              </RowItem>
-              <RowItem>
-                <ImageSearch className="search-icon" onClick={() => selectExercise(excersise.metaName)}/>
               </RowItem>
             </StyledContainer>
           )
@@ -74,7 +75,7 @@ function ExerciseList(props) {
 
 const mapStateToProps = state => {
   console.log(state)
-  return { excercises: state.exercises }
+  return { excercises: state.exercises, activeExercise: state.activeExercise }
 }
 
 export default connect(mapStateToProps, { selectExercise })(ExerciseList)

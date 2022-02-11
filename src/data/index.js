@@ -15,6 +15,13 @@ export const exerciseMetaData = () => {
     'urow': '/training-guide-app/images/uprightrow.png',
     'ccfly': '/training-guide-app/images/Middle+Cable+Pec+Fly.jpeg',
     'lraises': '/training-guide-app/images/lateralrises.png',
+    'cdeadlift': '/training-guide-app/images/dceadlift.jpeg',
+    'pups': '/training-guide-app/images/pullup.jpeg',
+    'fsquat': '/training-guide-app/images/fsquatl.jpeg',
+    'krows': '/training-guide-app/images/krow.jpeg',
+    'drdeadlift': '/training-guide-app/images/drdeadlift.jpeg',
+    'srow': '/training-guide-app/images/crow.png',
+    'clpushdown': '/training-guide-app/images/clpdiwn.jpeg',
   }
 }
 
@@ -127,7 +134,61 @@ export const routineInformation = () => {
           order: 6,
         },
       ]
-    }
+    },
+    {
+      day: 'day4',
+      exercises: [
+        {
+          name: 'Conventional Deadlift',
+          metaName: 'cdeadlift',
+          sets: '5',
+          reps: '5',
+          order: 0,
+        },
+        {
+          name: 'Pull Ups',
+          metaName: 'pups',
+          sets: '3',
+          reps: '7-8',
+          order: 1,
+        },
+        {
+          name: 'Front Squat',
+          metaName: 'fsquat',
+          sets: '4',
+          reps: '6-8',
+          order: 2,
+        },
+        {
+          name: 'Kroc Rows',
+          metaName: 'krows',
+          sets: '3',
+          reps: '12',
+          order: 3,
+        },
+        {
+          name: 'Dumbbell Romanian Deadlift',
+          metaName: 'drdeadlift',
+          sets: '3',
+          reps: '12-15',
+          order: 4,
+        },
+        {
+          name: 'Seated Row',
+          metaName: 'srow',
+          sets: '3',
+          reps: '12-15',
+          order: 5,
+        },
+        {
+          name: 'Cable Lat Pushdowns (Swimmers)',
+          metaName: 'clpushdown',
+          sets: '3',
+          reps: '12-15',
+          order: 6,
+        },
+      ]
+    },
   ]
 }
 
@@ -147,6 +208,10 @@ export const trainingList = {
       {
         id: 'day3',
         name: 'UpperBody Day B'
+      },
+      {
+        id: 'day4',
+        name: 'LowerBody Day B'
       },
     ],
     trainingOrder : [

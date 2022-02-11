@@ -23,7 +23,7 @@ const exercisesReducer = (selectedDay = routineInformation()[0].exercises, actio
 }
 
 const selectedExerciseReducer = (exercise = null, action) =>{
-  console.log(action)
+
   if(action.type === 'EXERCISE_SELECTED') {
     return exerciseMetaData()[action.payload] || '404'
   } else if(action.type === 'DAY_SELECTED') {
@@ -42,10 +42,22 @@ const activeDAyReducer = (day = 'day1', action) => {
   return day
 }
 
+const activeExcersiseReducer = (exercise = null, action) => {
+  console.log(action)
+  if(action.type === 'EXERCISE_SELECTED') {
+    return action.payload
+  } else if(action.type === 'DAY_SELECTED') {
+    return null
+  } 
+
+  return exercise
+}
+
 
 export default combineReducers({
   days: daysReducer,
   exercises: exercisesReducer,
   exerciseImage: selectedExerciseReducer,
   activeDay: activeDAyReducer,
+  activeExercise: activeExcersiseReducer,
 })
