@@ -22,6 +22,13 @@ export const exerciseMetaData = () => {
     'drdeadlift': '/training-guide-app/images/drdeadlift.jpeg',
     'srow': '/training-guide-app/images/crow.png',
     'clpushdown': '/training-guide-app/images/clpdiwn.jpeg',
+    'bsquat': '/training-guide-app/images/Squats.svg',
+    'ddeadlift': '/training-guide-app/images/ddeadlift.jpeg',
+    'hthrust': '/training-guide-app/images/htst.jpeg',
+    'ssquat': '/training-guide-app/images/spt-squat.png',
+    'dsdeadlift': '/training-guide-app/images/dsldeadlift.jpeg',
+    'legex': '/training-guide-app/images/legex.png',
+    'lcurls': '/training-guide-app/images/legcurl.webp',
   }
 }
 
@@ -75,6 +82,59 @@ export const routineInformation = () => {
         {
           name: 'Cable Reverse Fly',
           metaName: 'crfly',
+          sets: '3',
+          reps: '12-15',
+          order: 6,
+        },
+      ]
+    },{
+      day: 'day2',
+      exercises: [
+        {
+          name: 'Back Squat',
+          metaName: 'bsquat',
+          sets: '4',
+          reps: '4',
+          order: 0,
+        },
+        {
+          name: 'Deficit Deadlift',
+          metaName: 'ddeadlift',
+          sets: '3',
+          reps: '5',
+          order: 1,
+        },
+        {
+          name: 'Hip Thrust',
+          metaName: 'hthrust',
+          sets: '4',
+          reps: '8',
+          order: 2,
+        },
+        {
+          name: 'Split Squat',
+          metaName: 'ssquat',
+          sets: '3',
+          reps: '8-19',
+          order: 3,
+        },
+        {
+          name: 'Dumbbell Stiff-Leg Deadlift',
+          metaName: 'dsdeadlift',
+          sets: '3',
+          reps: '8-10',
+          order: 4,
+        },
+        {
+          name: 'Leg Extensions',
+          metaName: 'legex',
+          sets: '3',
+          reps: '12-15',
+          order: 5,
+        },
+        {
+          name: 'Leg Curls',
+          metaName: 'lcurls',
           sets: '3',
           reps: '12-15',
           order: 6,
