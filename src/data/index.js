@@ -249,6 +249,67 @@ export const routineInformation = () => {
         },
       ]
     },
+    {
+      day: 'day5',
+      exercises: [
+        {
+          name: 'Farmer Carry',
+          metaName: 'farmercarry',
+          sets: '5',
+          reps: '30sec',
+          order: 0,
+        },
+        {
+          name: 'Sled Push',
+          metaName: 'slpush',
+          sets: '5',
+          reps: '10-15m',
+          order: 1,
+        },
+        {
+          name: 'Carry',
+          metaName: 'carry',
+          sets: '3',
+          reps: '30sec',
+          order: 2,
+        },
+        {
+          name: 'EZ Bar Preacher Curls',
+          metaName: 'exbarprecurl',
+          sets: '4',
+          reps: '8+',
+          order: 3,
+        },
+        {
+          name: 'Overhead Rope Triceps Extensions	',
+          metaName: 'oheadropetrex',
+          sets: '4',
+          reps: '8+',
+          order: 4,
+        },
+        {
+          name: 'Reverse Barbell Curls',
+          metaName: 'rebarcurl',
+          sets: '4',
+          reps: '8+',
+          order: 5,
+        },
+        {
+          name: 'Triceps Pressdown',
+          metaName: 'tripres',
+          sets: '4',
+          reps: '8+',
+          order: 6,
+        },
+        {
+          name: 'Biceps 21s',
+          metaName: 'bicep21',
+          sets: '4',
+          reps: '7,7,7',
+          order: 7,
+        },
+      ]
+    },
   ]
 }
 
@@ -273,11 +334,17 @@ export const trainingList = {
         id: 'day4',
         name: 'LowerBody Day B'
       },
+      {
+        id: 'day5',
+        name: 'CORE, ARMS, ACCESSORY'
+      },
     ],
     trainingOrder : [
       'day1',
       'day2',
-      'day3'
+      'day3',
+      'day4',
+      'day5'
     ]
   },
   'inosuke': {
